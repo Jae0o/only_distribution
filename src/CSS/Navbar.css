@@ -1,0 +1,48 @@
+.nav {
+  width: 100%;
+  height: 6rem;
+
+  display: flex;
+  align-items: center;
+
+  user-select: none;
+}
+
+.nav__prev-container,
+.nav__title,
+.nav__home-container {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__prev-container,
+.nav__home-container {
+  width: 12rem;
+}
+
+.nav__prev-button,
+.nav__home-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #fff;
+
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+  will-change: transform;
+}
+.nav__prev-button:hover,
+.nav__home-button:hover {
+  transform: scale(1.05);
+}
+
+.nav__title {
+  flex-grow: 1;
+
+  font-size: 2rem;
+}

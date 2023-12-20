@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "BMJUA";
+  font-weight: normal;
+  src: url("./font/BMJUA_ttf.ttf") format("truetype");
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "BMJUA";
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-background);
+}
+
+button {
+  border: none;
+  font-family: "BMJUA";
+}
+
+html,
+div,
+section,
+article,
+button,
+span,
+ul,
+li,
+p {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-yellow: #fecd57;
+  --color-green: #84e080;
+  --color-grey: #a9b1bc;
+  --color-background: #646c77;
+}
+
+@keyframes PageIn {
+  0% {
+    transform: translate(120%);
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
